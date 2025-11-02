@@ -1,0 +1,206 @@
+<!-- 
+
+Macky C. Salazar
+CMSC 12 G 5-L
+Date Created: 10/25/2025
+
+This will create a super basic website where a user can set up a party according to their input or details. As such, this will ask for the basic necessary information like name and contact, and more importantly the very details of the party to be set up which includes the number of attendees, dishes, and venue details.
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Set up a party!</title>
+
+		<link rel="stylesheet" type="text/css" href="salazar_ex9.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	</head>
+
+
+	<body>
+
+
+		<div id="heading">
+			Welcome! You may place your order.
+		</div>
+
+
+		<div id="customerinformation">
+
+			<div class="introduction">
+				&#x1F60E; Welcome to the easiest way to plan your next party!
+
+				<br>
+				<br>
+
+				Just share your details, guest count, and food preferences, and we’ll handle the rest. Sit back, relax, and get ready to celebrate without the stress. &#x1F929;
+			</div>
+
+			<div class="customerinformationform">
+				<p id="customerinformationtext">Customer Information </p>
+
+				<form>
+				<label class="description" for="uname"/> Name: </label> <input type="text" name="username" id="uname" required />
+				<br> <br>
+				<label class="description" for="mobilenum"/> Mobile Number: </label> <input type="text" name="mobilenumber" id="mobilenum" placeholder="09XXXXXXXXX" required />
+				<br> <br>
+				<label class="description" for="emailadd"/> Email Address: </label> <input type="email" name="emailaddress" id="emailadd" required />
+	
+				</form>	
+			</div>
+
+		</div>
+
+
+				<div id="partydetails">
+
+					<!--<form>
+					<fieldset>
+					<legend> Party Details </legend> -->
+
+					<div id="section1">
+						<label for="numberofpeople"> Number of People: </label> <input type="number" name="attendees" id="numberofpeople">
+						<br> <br>
+
+						Appetizer
+						<br>
+						<input type="radio" name="appetizer" value="salad" id="saladappetizer" checked/> <label for="saladappetizer">Salad </label>
+
+						<br>
+
+						<input type="radio" name="appetizer" value="breadwithdip" id="breadappetizer"/> <label for="breadappetizer"> Bread w/ Dip </label>
+
+						<br> 
+
+						<input type="radio" name="appetizer" value="tomatosurprise" id="tomatosurpriseppetizer"/> <label for="tomatosurpriseppetizer"> Tomato Surprise </label>
+
+						<br>
+
+						<input type="radio" name="appetizer" value="mushroombites" id="mushroombitesappetizer"/> <label for="mushroombitesappetizer"> Mushroom Bites </label>
+
+						<br> <br>
+
+						Main Dishes
+						<br>
+
+						<input type="checkbox" name="maindish" value="roastbeef"id="roastbeefmaindish"> <label for="roastbeefmaindish"> Roast Beef </label>
+						<br>
+
+						<input type="checkbox" name="maindish" id="beefsteakmaindish" value="beefsteak"> <label for="beefsteakmaindish">Beef Steak </label>
+						<br>
+
+						<input type="checkbox" name="maindish" id="porkspareribsmaindish" value="porkspareribs"> <label for="porkspareribsmaindish"> Pork Spareribs </label>
+						<br>
+
+						<input type="checkbox" name="maindish" id="porkmarbellamaindish" value="porkmarbella"> <label for="porkmarbellamaindish"> Pork Marbella </label>
+						<br>
+
+						<input type="checkbox" name="maindish" id="grilledchickenmaindish" value="grilledchicken"> <label for="grilledchickenmaindish"> Grilled Chicken </label>
+						<br>
+
+						<input type="checkbox" name="maindish" id="roastchickenmaindish" value="roastchicken"> <label for="roastchickenmaindish"> Roast Chicken</label>
+						<br>
+
+						<input type="checkbox" name="maindish" id="broiledsalmonmaindish" value="broiledsalmon"> <label for="broiledsalmonmaindish"> Broiled Salmon</label>
+						<br>
+
+						<input type="checkbox" name="maindish" id="grilledsalmonmaindish" value="grilledsalmon"> <label for="grilledsalmonmaindish"> Grilled Salmon</label>
+						<br>
+					</div>
+
+
+					<div id="section2">
+						Desserts
+						<br>
+
+						<input type="checkbox" name="dessert" id="moltenchocolatecakedessert" value="moltenchocolatecake"> <label for="moltenchocolatecakedessert">Molten Chocolate Cake</label>
+						<br>
+
+						<input type="checkbox" name="dessert" id="redvelvetcakedessert" value="redvelvetcake"> <label for="redvelvetcakedessert"> Red Velvet Cake</label>
+						<br>
+
+						<input type="checkbox" name="dessert" id="lemonbarsdessert" value="lemonbars"> <label for="lemonbarsdessert"> Lemon Bars</label>
+						<br>
+
+						<input type="checkbox" name="dessert" id="peanutbutterbarsdessert" value="peanutbutterbars"> <label for="peanutbutterbarsdessert">Peanut Butter Bars</label>
+						<br>
+
+						<input type="checkbox" name="dessert" id="bukopiedessert" value="bukopie"> <label for="bukopiedessert">Buko Pie</label>
+						<br>
+
+						<input type="checkbox" name="dessert" id="lemonmeringuepiedessert" value="lemonmeringuepie"> <label for="lemonmeringuepiedessert">Lemon Meringue Pie </label>
+						<br>
+						<br>
+						Type of Rice
+						<br>
+
+						<input type="radio" name="ricetype" id="plainrice" value ="plain" checked/> <label for="plainrice"> Plain </label>
+						<br>
+
+						<input type="radio" name="ricetype" id="garlicrice" value ="garlic"/> <label for="garlicrice"> Garlic Rice </label>
+						<br>
+
+						<input type="radio" name="ricetype" id="bagoongrice" value ="bagoong"/> <label for="bagoongrice"> Bagoong Rice  </label>
+						<br>
+
+						<br>
+						Drinks
+						<br>
+
+						<input type="radio" name="drinks" id="cucumberlemonadedrinks" value="cucumberlemonade" checked /> <label for="cucumberlemonadedrinks">  Cucumber Lemonade </label>
+						<br>
+
+						<input type="radio" name="drinks" id="redicedteadrinks" value="redicedtea"/><label for="redicedteadrinks"> Red Iced Tea </label>
+						<br>
+
+						<input type="radio" name="drinks" id="ripemangojuicedrinks" value="ripemangojuice"/>  <label for="ripemangojuicedrinks">  Ripe Mango Juice </label>
+						<br>
+					</div>
+
+
+					<!--</fieldset>		
+
+					</form> -->
+				
+				</div>
+
+			
+
+		<div class="deliverydetails">
+		<form>
+			<fieldset>
+
+				<legend id="deliverydetailsheading"> Delivery Details </legend>
+
+					<label for="venueaddresstext" id="venueaddress"> Venue Address </label>
+					<br>
+					<textarea name="venueaddress" rows="5" cols="50" id="venueaddresstext" required>Address here...</textarea>
+					<br>
+
+					<label for="partydate" class="dateandtimetext"> Party date </label> <input type="date" name="date" id="partydate" required />
+					<br>
+					<label for="partytime" class="dateandtimetext"> Party time </label> <input type="time" name="time" id="partytime" required />
+
+			</fieldset>
+		</form>
+		</div>
+
+		<div id="buttonsholder">
+			<button type="submit" class="button"> Submit </button>
+			<br>
+			<button type="reset" class="button"> Reset </button>
+		</div>
+
+		<div id="reference"> 
+			<p>Background image by <a href="https://www.freepik.com/free-photo/blur-coffee-cafe-shop-restaurant-with-bokeh-background-xd_1235557.htm#fromView=keyword&page=1&position=1&uuid=2f2f2fe5-eba3-4fc3-b46d-43df51b03fe7&query=Restaurant+background" target="_blank">Freepik</a></p>
+		</div>
+
+	</body>
+
+</html>
